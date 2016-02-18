@@ -19,16 +19,16 @@ void setup()
 
 void loop()
 {
-	if (RecieveStatus());
-	else
-	{
-		ReadRelayStatus();	
-	}
-	applyStaus();
-	sendStatus();
-	delay(500);
+	//if (RecieveStatus());
+	//else
+	//{
+	//	ReadRelayStatus();	
+	//}
+	//applyStaus();
+	//sendStatus();
+	//delay(500);
 
-	
+	BlinkAll();
 
 }
 
