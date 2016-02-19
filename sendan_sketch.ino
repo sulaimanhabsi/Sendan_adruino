@@ -68,7 +68,7 @@ bool RecieveStatus()
 	uint8_t buffer[10] ={0,0,0,0,0,0,0,0,0,0} ;	
 	uint8_t* p = (uint8_t*) &RelayStatus ;
 	do{
-		if(Serial.available())
+		if(Serial.available()>0)
 			ch = Serial.read();
 		tries++;
 	}while((ch != 'a') && (tries <11));
@@ -77,7 +77,7 @@ bool RecieveStatus()
 		buffer[r] = ch ;
 		r++;
 		do{
-			if(Serial.available())
+			if(Serial.available()>0)
 			{
 				buffer[r]= Serial.read();
 				r++;
