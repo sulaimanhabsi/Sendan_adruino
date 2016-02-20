@@ -26,7 +26,7 @@ void loop()
 	}
 	applyStaus();
 	sendStatus();
-	delay(500);
+	delay(1000);
 
 	
 
