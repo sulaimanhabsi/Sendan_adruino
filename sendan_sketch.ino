@@ -28,7 +28,8 @@ void loop()
 	//sendStatus();
 	//delay(500);
 
-	BlinkAll();
+	//BlinkAll();
+	SequenceAll();
 
 }
 
@@ -229,12 +230,12 @@ void BlinkAll()
 }
 void SequenceAll()
 {
-	for(int i=0;i<64;i++)
+	for(int i=0;i<16;i++)
 	{
 	 RelayOn(i);
 	 delay(500);
 	}
-	for(int i=0;i<64;i++)
+	for(int i=0;i<16;i++)
 	{
 		RelayOff(i);
 		delay(500);
